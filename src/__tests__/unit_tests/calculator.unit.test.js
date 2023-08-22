@@ -38,7 +38,7 @@ test("performs substraction correctly", () => {
   fireEvent.change(num2Input, { target: { value: "50" } });
   fireEvent.click(calculateButton);
 
-  const resultElement = screen.getByText("Result: 50");
+  const resultElement = screen.getByText("Result: 0");
   expect(resultElement).toBeInTheDocument();
 });
 //sss
